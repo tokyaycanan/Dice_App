@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -40,5 +41,7 @@ class MainActivity : AppCompatActivity() {
         }
         diceImage.setImageResource(drawableResource)
         diceText.text = randomNumber.toString()
+
+        Toast.makeText(this, "CLICKED", Toast.LENGTH_SHORT).show()
     }
 }
